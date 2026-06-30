@@ -1,0 +1,1088 @@
+14:43:43.107 [main] INFO  c.tagConverter.ConverterApplications - Starting ConverterApplications using Java 11.0.20 on KDN_PC with PID 5472 (C:\Users\User\Desktop\KDN-TagConverter-kospo\KDN-TagConverter-kospo\bin\main started by User in C:\Users\User\Desktop\KDN-TagConverter-kospo\KDN-TagConverter-kospo)
+14:43:43.109 [main] INFO  c.tagConverter.ConverterApplications - No active profile set, falling back to 1 default profile: "default"
+14:43:43.580 [main] INFO  com.tagConverter.ApplicationConfig - jarPath :C:/Users/User/Desktop/KDN-TagConverter-kospo/KDN-TagConverter-kospo/bin/main/com/tagConverter/
+14:43:43.591 [main] INFO  com.tagConverter.ApplicationConfig - directoryPath :C:\Users\User\Desktop\KDN-TagConverter-kospo\KDN-TagConverter-kospo\bin\main\com
+14:43:43.601 [main] WARN  o.s.c.a.AnnotationConfigApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'applicationConfig' defined in file [C:\Users\User\Desktop\KDN-TagConverter-kospo\KDN-TagConverter-kospo\bin\main\com\tagConverter\ApplicationConfig.class]: Instantiation of bean failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.tagConverter.ApplicationConfig$$EnhancerBySpringCGLIB$$4db0ccc5]: Constructor threw exception; nested exception is com.tagConverter.ApplicationConfig$ConfigException: Error reading config file\C:\Users\User\Desktop\KDN-TagConverter-kospo\KDN-TagConverter-kospo\bin\main\com\config\application.properties
+14:43:43.608 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+14:43:43.625 [main] ERROR o.s.boot.SpringApplication - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'applicationConfig' defined in file [C:\Users\User\Desktop\KDN-TagConverter-kospo\KDN-TagConverter-kospo\bin\main\com\tagConverter\ApplicationConfig.class]: Instantiation of bean failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.tagConverter.ApplicationConfig$$EnhancerBySpringCGLIB$$4db0ccc5]: Constructor threw exception; nested exception is com.tagConverter.ApplicationConfig$ConfigException: Error reading config file\C:\Users\User\Desktop\KDN-TagConverter-kospo\KDN-TagConverter-kospo\bin\main\com\config\application.properties
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1334)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1232)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:953)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:740)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:415)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1312)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1301)
+	at com.tagConverter.ConverterApplications.main(ConverterApplications.java:40)
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.tagConverter.ApplicationConfig$$EnhancerBySpringCGLIB$$4db0ccc5]: Constructor threw exception; nested exception is com.tagConverter.ApplicationConfig$ConfigException: Error reading config file\C:\Users\User\Desktop\KDN-TagConverter-kospo\KDN-TagConverter-kospo\bin\main\com\config\application.properties
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:224)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:87)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1326)
+	... 16 common frames omitted
+Caused by: com.tagConverter.ApplicationConfig$ConfigException: Error reading config file\C:\Users\User\Desktop\KDN-TagConverter-kospo\KDN-TagConverter-kospo\bin\main\com\config\application.properties
+	at com.tagConverter.ApplicationConfig.build(ApplicationConfig.java:58)
+	at com.tagConverter.ApplicationConfig.<init>(ApplicationConfig.java:42)
+	at com.tagConverter.ApplicationConfig$$EnhancerBySpringCGLIB$$4db0ccc5.<init>(<generated>)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:211)
+	... 18 common frames omitted
+Caused by: java.io.FileNotFoundException: C:\Users\User\Desktop\KDN-TagConverter-kospo\KDN-TagConverter-kospo\bin\main\com\config\application.properties (지정된 경로를 찾을 수 없습니다)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:219)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:157)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:112)
+	at com.tagConverter.ApplicationConfig.build(ApplicationConfig.java:55)
+	... 25 common frames omitted
+14:43:43.627 [main] ERROR c.tagConverter.ConverterApplications - Error creating bean with name 'applicationConfig' defined in file [C:\Users\User\Desktop\KDN-TagConverter-kospo\KDN-TagConverter-kospo\bin\main\com\tagConverter\ApplicationConfig.class]: Instantiation of bean failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.tagConverter.ApplicationConfig$$EnhancerBySpringCGLIB$$4db0ccc5]: Constructor threw exception; nested exception is com.tagConverter.ApplicationConfig$ConfigException: Error reading config file\C:\Users\User\Desktop\KDN-TagConverter-kospo\KDN-TagConverter-kospo\bin\main\com\config\application.properties
+14:46:54.480 [main] INFO  c.tagConverter.ConverterApplications - Starting ConverterApplications using Java 11.0.20 on KDN_PC with PID 11884 (C:\Users\User\Desktop\KDN-TagConverter-kospo\KDN-TagConverter-kospo\bin\main started by User in C:\Users\User\Desktop\KDN-TagConverter-kospo\KDN-TagConverter-kospo)
+14:46:54.482 [main] INFO  c.tagConverter.ConverterApplications - No active profile set, falling back to 1 default profile: "default"
+14:46:54.921 [main] INFO  com.tagConverter.ApplicationConfig - jarPath :C:/Users/User/Desktop/KDN-TagConverter-kospo/KDN-TagConverter-kospo/bin/
+14:46:54.922 [main] INFO  com.tagConverter.ApplicationConfig - directoryPath :C:\Users\User\Desktop\KDN-TagConverter-kospo\KDN-TagConverter-kospo
+14:46:54.928 [main] INFO  com.tagConverter.ApplicationConfig - Task config setting : compression.type=gzip
+14:46:54.929 [main] INFO  com.tagConverter.ApplicationConfig - Task config setting : value.deserializer=org.apache.kafka.common.serialization.StringDeserializer
+14:46:54.929 [main] INFO  com.tagConverter.ApplicationConfig - Task config setting : group.id=???
+14:46:54.929 [main] INFO  com.tagConverter.ApplicationConfig - Task config setting : bootstrap.servers=localhost:9092
+14:46:54.929 [main] INFO  com.tagConverter.ApplicationConfig - Task config setting : converter.org.topic=Org_test
+14:46:54.929 [main] INFO  com.tagConverter.ApplicationConfig - Task config setting : buffer.memory=1000000
+14:46:54.929 [main] INFO  com.tagConverter.ApplicationConfig - Task config setting : key.serializer=org.apache.kafka.common.serialization.StringSerializer
+14:46:54.929 [main] INFO  com.tagConverter.ApplicationConfig - Task config setting : spring.datasource.driver-class-name=org.mariadb.jdbc.Driver
+14:46:54.929 [main] INFO  com.tagConverter.ApplicationConfig - Task config setting : converter.nomaster.topic=nomaster
+14:46:54.930 [main] INFO  com.tagConverter.ApplicationConfig - Task config setting : fetch.max.wait.ms=100
+14:46:54.930 [main] INFO  com.tagConverter.ApplicationConfig - Task config setting : converter.plantcodes=VINTAN2
+14:46:54.930 [main] INFO  com.tagConverter.ApplicationConfig - Task config setting : key.deserializer=org.apache.kafka.common.serialization.StringDeserializer
+14:46:54.930 [main] INFO  com.tagConverter.ApplicationConfig - Task config setting : converter.error.topic=Error
+14:46:54.931 [main] INFO  com.tagConverter.ApplicationConfig - Task config setting : max.poll.records=100000
+14:46:54.931 [main] INFO  com.tagConverter.ApplicationConfig - Task config setting : converter.threadCnt=7
+14:46:54.931 [main] INFO  com.tagConverter.ApplicationConfig - Task config setting : batch.size=163840
+14:46:54.931 [main] INFO  com.tagConverter.ApplicationConfig - Task config setting : acks=1
+14:46:54.931 [main] INFO  com.tagConverter.ApplicationConfig - Task config setting : converter.std.topic=Std_test
+14:46:54.931 [main] INFO  com.tagConverter.ApplicationConfig - Task config setting : spring.datasource.password=Sirenx123456/
+14:46:54.931 [main] INFO  com.tagConverter.ApplicationConfig - Task config setting : spring.datasource.username=root
+14:46:54.931 [main] INFO  com.tagConverter.ApplicationConfig - Task config setting : value.serializer=org.apache.kafka.common.serialization.StringSerializer
+14:46:54.931 [main] INFO  com.tagConverter.ApplicationConfig - Task config setting : spring.datasource.url=jdbc:mariadb://localhost:3306/kps
+14:46:54.931 [main] INFO  com.tagConverter.ApplicationConfig - Task config setting : fetch.min.bytes=10000
+14:46:54.932 [main] INFO  com.tagConverter.ApplicationConfig - Task config setting : auto.commit.enable=latest
+14:46:54.932 [main] INFO  com.tagConverter.ApplicationConfig - Task config setting : linger.ms=50
+14:46:55.146 [main] INFO  c.tagConverter.ConverterApplications - Started ConverterApplications in 0.937 seconds (JVM running for 1.363)
+14:46:55.200 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+14:46:56.267 [main] ERROR com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Exception during pool initialization.
+java.sql.SQLSyntaxErrorException: Unknown database 'kps'
+	at org.mariadb.jdbc.internal.util.exceptions.ExceptionMapper.get(ExceptionMapper.java:242)
+	at org.mariadb.jdbc.internal.util.exceptions.ExceptionMapper.getException(ExceptionMapper.java:171)
+	at org.mariadb.jdbc.internal.protocol.AbstractConnectProtocol.connectWithoutProxy(AbstractConnectProtocol.java:1128)
+	at org.mariadb.jdbc.internal.util.Utils.retrieveProxy(Utils.java:560)
+	at org.mariadb.jdbc.MariaDbConnection.newConnection(MariaDbConnection.java:174)
+	at org.mariadb.jdbc.Driver.connect(Driver.java:92)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:364)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:206)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:476)
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:561)
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:115)
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:112)
+	at org.springframework.jdbc.datasource.DataSourceUtils.fetchConnection(DataSourceUtils.java:159)
+	at org.springframework.jdbc.datasource.DataSourceUtils.doGetConnection(DataSourceUtils.java:117)
+	at org.springframework.jdbc.datasource.DataSourceUtils.getConnection(DataSourceUtils.java:80)
+	at org.mybatis.spring.transaction.SpringManagedTransaction.openConnection(SpringManagedTransaction.java:82)
+	at org.mybatis.spring.transaction.SpringManagedTransaction.getConnection(SpringManagedTransaction.java:68)
+	at org.apache.ibatis.executor.BaseExecutor.getConnection(BaseExecutor.java:338)
+	at org.apache.ibatis.executor.SimpleExecutor.prepareStatement(SimpleExecutor.java:84)
+	at org.apache.ibatis.executor.SimpleExecutor.doQuery(SimpleExecutor.java:62)
+	at org.apache.ibatis.executor.BaseExecutor.queryFromDatabase(BaseExecutor.java:326)
+	at org.apache.ibatis.executor.BaseExecutor.query(BaseExecutor.java:156)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:109)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:83)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:148)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:141)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:433)
+	at com.sun.proxy.$Proxy49.selectList(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.selectList(SqlSessionTemplate.java:230)
+	at org.apache.ibatis.binding.MapperMethod.executeForMany(MapperMethod.java:139)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:76)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:59)
+	at com.sun.proxy.$Proxy50.getAllTags(Unknown Source)
+	at com.tagConverter.Service.ConverterDataService.selectAllTags(ConverterDataService.java:19)
+	at com.tagConverter.ConverterApplications.main(ConverterApplications.java:48)
+Caused by: java.sql.SQLException: Unknown database 'kps'
+	at org.mariadb.jdbc.internal.protocol.AbstractConnectProtocol.authentication(AbstractConnectProtocol.java:850)
+	at org.mariadb.jdbc.internal.protocol.AbstractConnectProtocol.handleConnectionPhases(AbstractConnectProtocol.java:752)
+	at org.mariadb.jdbc.internal.protocol.AbstractConnectProtocol.connect(AbstractConnectProtocol.java:412)
+	at org.mariadb.jdbc.internal.protocol.AbstractConnectProtocol.connectWithoutProxy(AbstractConnectProtocol.java:1124)
+	... 37 common frames omitted
+14:46:56.272 [main] ERROR c.tagConverter.ConverterApplications - nested exception is org.apache.ibatis.exceptions.PersistenceException: 
+### Error querying database.  Cause: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLSyntaxErrorException: Unknown database 'kps'
+### The error may exist in file [C:\Users\User\Desktop\KDN-TagConverter-kospo\KDN-TagConverter-kospo\bin\main\com\tagConverter\mapper\TagMapper.xml]
+### The error may involve com.tagConverter.mapper.TagMapper.getAllTags
+### The error occurred while executing a query
+### Cause: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLSyntaxErrorException: Unknown database 'kps'
+14:47:26.474 [main] INFO  c.tagConverter.ConverterApplications - Starting ConverterApplications using Java 11.0.20 on KDN_PC with PID 19216 (C:\Users\User\Desktop\KDN-TagConverter-kospo\KDN-TagConverter-kospo\bin\main started by User in C:\Users\User\Desktop\KDN-TagConverter-kospo\KDN-TagConverter-kospo)
+14:47:26.477 [main] INFO  c.tagConverter.ConverterApplications - No active profile set, falling back to 1 default profile: "default"
+14:47:26.997 [main] INFO  com.tagConverter.ApplicationConfig - jarPath :C:/Users/User/Desktop/KDN-TagConverter-kospo/KDN-TagConverter-kospo/bin/
+14:47:26.997 [main] INFO  com.tagConverter.ApplicationConfig - directoryPath :C:\Users\User\Desktop\KDN-TagConverter-kospo\KDN-TagConverter-kospo
+14:47:27.005 [main] INFO  com.tagConverter.ApplicationConfig - Task config setting : compression.type=gzip
+14:47:27.005 [main] INFO  com.tagConverter.ApplicationConfig - Task config setting : value.deserializer=org.apache.kafka.common.serialization.StringDeserializer
+14:47:27.005 [main] INFO  com.tagConverter.ApplicationConfig - Task config setting : group.id=???
+14:47:27.005 [main] INFO  com.tagConverter.ApplicationConfig - Task config setting : bootstrap.servers=localhost:9092
+14:47:27.005 [main] INFO  com.tagConverter.ApplicationConfig - Task config setting : converter.org.topic=Org_test
+14:47:27.005 [main] INFO  com.tagConverter.ApplicationConfig - Task config setting : buffer.memory=1000000
+14:47:27.005 [main] INFO  com.tagConverter.ApplicationConfig - Task config setting : key.serializer=org.apache.kafka.common.serialization.StringSerializer
+14:47:27.005 [main] INFO  com.tagConverter.ApplicationConfig - Task config setting : spring.datasource.driver-class-name=org.mariadb.jdbc.Driver
+14:47:27.006 [main] INFO  com.tagConverter.ApplicationConfig - Task config setting : converter.nomaster.topic=nomaster
+14:47:27.006 [main] INFO  com.tagConverter.ApplicationConfig - Task config setting : fetch.max.wait.ms=100
+14:47:27.006 [main] INFO  com.tagConverter.ApplicationConfig - Task config setting : converter.plantcodes=VINTAN2
+14:47:27.007 [main] INFO  com.tagConverter.ApplicationConfig - Task config setting : key.deserializer=org.apache.kafka.common.serialization.StringDeserializer
+14:47:27.007 [main] INFO  com.tagConverter.ApplicationConfig - Task config setting : converter.error.topic=Error
+14:47:27.007 [main] INFO  com.tagConverter.ApplicationConfig - Task config setting : max.poll.records=100000
+14:47:27.007 [main] INFO  com.tagConverter.ApplicationConfig - Task config setting : converter.threadCnt=7
+14:47:27.007 [main] INFO  com.tagConverter.ApplicationConfig - Task config setting : batch.size=163840
+14:47:27.007 [main] INFO  com.tagConverter.ApplicationConfig - Task config setting : acks=1
+14:47:27.007 [main] INFO  com.tagConverter.ApplicationConfig - Task config setting : converter.std.topic=Std_test
+14:47:27.007 [main] INFO  com.tagConverter.ApplicationConfig - Task config setting : spring.datasource.password=Sirenx123456/
+14:47:27.007 [main] INFO  com.tagConverter.ApplicationConfig - Task config setting : spring.datasource.username=root
+14:47:27.007 [main] INFO  com.tagConverter.ApplicationConfig - Task config setting : value.serializer=org.apache.kafka.common.serialization.StringSerializer
+14:47:27.007 [main] INFO  com.tagConverter.ApplicationConfig - Task config setting : spring.datasource.url=jdbc:mariadb://localhost:3306/idpp
+14:47:27.007 [main] INFO  com.tagConverter.ApplicationConfig - Task config setting : fetch.min.bytes=10000
+14:47:27.008 [main] INFO  com.tagConverter.ApplicationConfig - Task config setting : auto.commit.enable=latest
+14:47:27.008 [main] INFO  com.tagConverter.ApplicationConfig - Task config setting : linger.ms=50
+14:47:27.249 [main] INFO  c.tagConverter.ConverterApplications - Started ConverterApplications in 1.114 seconds (JVM running for 2.042)
+14:47:27.304 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+14:47:27.367 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+14:47:27.440 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+14:47:27.445 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+14:47:27.446 [main] ERROR c.tagConverter.ConverterApplications - 
+### Error querying database.  Cause: java.sql.SQLSyntaxErrorException: (conn=33) Table 'kps.tb_tag' doesn't exist
+### The error may exist in file [C:\Users\User\Desktop\KDN-TagConverter-kospo\KDN-TagConverter-kospo\bin\main\com\tagConverter\mapper\TagMapper.xml]
+### The error may involve com.tagConverter.mapper.TagMapper.getAllTags-Inline
+### The error occurred while setting parameters
+### SQL: SELECT * FROM kps.tb_tag WHERE MENO_CD IN          (               ?          )
+### Cause: java.sql.SQLSyntaxErrorException: (conn=33) Table 'kps.tb_tag' doesn't exist
+; bad SQL grammar []; nested exception is java.sql.SQLSyntaxErrorException: (conn=33) Table 'kps.tb_tag' doesn't exist
+14:48:44.996 [main] INFO  c.tagConverter.ConverterApplications - Starting ConverterApplications using Java 11.0.20 on KDN_PC with PID 23648 (C:\Users\User\Desktop\KDN-TagConverter-kospo\KDN-TagConverter-kospo\bin\main started by User in C:\Users\User\Desktop\KDN-TagConverter-kospo\KDN-TagConverter-kospo)
+14:48:44.998 [main] INFO  c.tagConverter.ConverterApplications - No active profile set, falling back to 1 default profile: "default"
+14:48:45.452 [main] INFO  com.tagConverter.ApplicationConfig - jarPath :C:/Users/User/Desktop/KDN-TagConverter-kospo/KDN-TagConverter-kospo/bin/
+14:48:45.453 [main] INFO  com.tagConverter.ApplicationConfig - directoryPath :C:\Users\User\Desktop\KDN-TagConverter-kospo\KDN-TagConverter-kospo
+14:48:45.460 [main] INFO  com.tagConverter.ApplicationConfig - Task config setting : compression.type=gzip
+14:48:45.460 [main] INFO  com.tagConverter.ApplicationConfig - Task config setting : value.deserializer=org.apache.kafka.common.serialization.StringDeserializer
+14:48:45.460 [main] INFO  com.tagConverter.ApplicationConfig - Task config setting : group.id=???
+14:48:45.460 [main] INFO  com.tagConverter.ApplicationConfig - Task config setting : bootstrap.servers=localhost:9092
+14:48:45.460 [main] INFO  com.tagConverter.ApplicationConfig - Task config setting : converter.org.topic=Org_test
+14:48:45.460 [main] INFO  com.tagConverter.ApplicationConfig - Task config setting : buffer.memory=1000000
+14:48:45.461 [main] INFO  com.tagConverter.ApplicationConfig - Task config setting : key.serializer=org.apache.kafka.common.serialization.StringSerializer
+14:48:45.461 [main] INFO  com.tagConverter.ApplicationConfig - Task config setting : spring.datasource.driver-class-name=org.mariadb.jdbc.Driver
+14:48:45.461 [main] INFO  com.tagConverter.ApplicationConfig - Task config setting : converter.nomaster.topic=nomaster
+14:48:45.461 [main] INFO  com.tagConverter.ApplicationConfig - Task config setting : fetch.max.wait.ms=100
+14:48:45.461 [main] INFO  com.tagConverter.ApplicationConfig - Task config setting : converter.plantcodes=VINTAN2
+14:48:45.461 [main] INFO  com.tagConverter.ApplicationConfig - Task config setting : key.deserializer=org.apache.kafka.common.serialization.StringDeserializer
+14:48:45.461 [main] INFO  com.tagConverter.ApplicationConfig - Task config setting : converter.error.topic=Error
+14:48:45.461 [main] INFO  com.tagConverter.ApplicationConfig - Task config setting : max.poll.records=100000
+14:48:45.463 [main] INFO  com.tagConverter.ApplicationConfig - Task config setting : converter.threadCnt=7
+14:48:45.463 [main] INFO  com.tagConverter.ApplicationConfig - Task config setting : batch.size=163840
+14:48:45.463 [main] INFO  com.tagConverter.ApplicationConfig - Task config setting : acks=1
+14:48:45.463 [main] INFO  com.tagConverter.ApplicationConfig - Task config setting : converter.std.topic=Std_test
+14:48:45.463 [main] INFO  com.tagConverter.ApplicationConfig - Task config setting : spring.datasource.password=Sirenx123456/
+14:48:45.463 [main] INFO  com.tagConverter.ApplicationConfig - Task config setting : spring.datasource.username=root
+14:48:45.463 [main] INFO  com.tagConverter.ApplicationConfig - Task config setting : value.serializer=org.apache.kafka.common.serialization.StringSerializer
+14:48:45.463 [main] INFO  com.tagConverter.ApplicationConfig - Task config setting : spring.datasource.url=jdbc:mariadb://localhost:3306/idpp
+14:48:45.463 [main] INFO  com.tagConverter.ApplicationConfig - Task config setting : fetch.min.bytes=10000
+14:48:45.463 [main] INFO  com.tagConverter.ApplicationConfig - Task config setting : auto.commit.enable=latest
+14:48:45.464 [main] INFO  com.tagConverter.ApplicationConfig - Task config setting : linger.ms=50
+14:48:45.661 [main] INFO  c.tagConverter.ConverterApplications - Started ConverterApplications in 0.936 seconds (JVM running for 1.343)
+14:48:45.711 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+14:48:45.766 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+14:48:45.789 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+14:48:45.794 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+14:48:45.804 [Thread-3] INFO  o.a.k.c.producer.ProducerConfig - ProducerConfig values: 
+	acks = 1
+	batch.size = 163840
+	bootstrap.servers = [localhost:9092]
+	buffer.memory = 1000000
+	client.id = 
+	compression.type = gzip
+	connections.max.idle.ms = 540000
+	enable.idempotence = false
+	interceptor.classes = null
+	key.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	linger.ms = 50
+	max.block.ms = 60000
+	max.in.flight.requests.per.connection = 5
+	max.request.size = 1048576
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partitioner.class = class org.apache.kafka.clients.producer.internals.DefaultPartitioner
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 0
+	retry.backoff.ms = 100
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.timeout.ms = 60000
+	transactional.id = null
+	value.serializer = class org.apache.kafka.common.serialization.StringSerializer
+
+14:48:45.804 [Thread-6] INFO  o.a.k.c.producer.ProducerConfig - ProducerConfig values: 
+	acks = 1
+	batch.size = 163840
+	bootstrap.servers = [localhost:9092]
+	buffer.memory = 1000000
+	client.id = 
+	compression.type = gzip
+	connections.max.idle.ms = 540000
+	enable.idempotence = false
+	interceptor.classes = null
+	key.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	linger.ms = 50
+	max.block.ms = 60000
+	max.in.flight.requests.per.connection = 5
+	max.request.size = 1048576
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partitioner.class = class org.apache.kafka.clients.producer.internals.DefaultPartitioner
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 0
+	retry.backoff.ms = 100
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.timeout.ms = 60000
+	transactional.id = null
+	value.serializer = class org.apache.kafka.common.serialization.StringSerializer
+
+14:48:45.804 [Thread-7] INFO  o.a.k.c.producer.ProducerConfig - ProducerConfig values: 
+	acks = 1
+	batch.size = 163840
+	bootstrap.servers = [localhost:9092]
+	buffer.memory = 1000000
+	client.id = 
+	compression.type = gzip
+	connections.max.idle.ms = 540000
+	enable.idempotence = false
+	interceptor.classes = null
+	key.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	linger.ms = 50
+	max.block.ms = 60000
+	max.in.flight.requests.per.connection = 5
+	max.request.size = 1048576
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partitioner.class = class org.apache.kafka.clients.producer.internals.DefaultPartitioner
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 0
+	retry.backoff.ms = 100
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.timeout.ms = 60000
+	transactional.id = null
+	value.serializer = class org.apache.kafka.common.serialization.StringSerializer
+
+14:48:45.804 [Thread-4] INFO  o.a.k.c.producer.ProducerConfig - ProducerConfig values: 
+	acks = 1
+	batch.size = 163840
+	bootstrap.servers = [localhost:9092]
+	buffer.memory = 1000000
+	client.id = 
+	compression.type = gzip
+	connections.max.idle.ms = 540000
+	enable.idempotence = false
+	interceptor.classes = null
+	key.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	linger.ms = 50
+	max.block.ms = 60000
+	max.in.flight.requests.per.connection = 5
+	max.request.size = 1048576
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partitioner.class = class org.apache.kafka.clients.producer.internals.DefaultPartitioner
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 0
+	retry.backoff.ms = 100
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.timeout.ms = 60000
+	transactional.id = null
+	value.serializer = class org.apache.kafka.common.serialization.StringSerializer
+
+14:48:45.804 [Thread-5] INFO  o.a.k.c.producer.ProducerConfig - ProducerConfig values: 
+	acks = 1
+	batch.size = 163840
+	bootstrap.servers = [localhost:9092]
+	buffer.memory = 1000000
+	client.id = 
+	compression.type = gzip
+	connections.max.idle.ms = 540000
+	enable.idempotence = false
+	interceptor.classes = null
+	key.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	linger.ms = 50
+	max.block.ms = 60000
+	max.in.flight.requests.per.connection = 5
+	max.request.size = 1048576
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partitioner.class = class org.apache.kafka.clients.producer.internals.DefaultPartitioner
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 0
+	retry.backoff.ms = 100
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.timeout.ms = 60000
+	transactional.id = null
+	value.serializer = class org.apache.kafka.common.serialization.StringSerializer
+
+14:48:45.804 [Thread-1] INFO  o.a.k.c.producer.ProducerConfig - ProducerConfig values: 
+	acks = 1
+	batch.size = 163840
+	bootstrap.servers = [localhost:9092]
+	buffer.memory = 1000000
+	client.id = 
+	compression.type = gzip
+	connections.max.idle.ms = 540000
+	enable.idempotence = false
+	interceptor.classes = null
+	key.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	linger.ms = 50
+	max.block.ms = 60000
+	max.in.flight.requests.per.connection = 5
+	max.request.size = 1048576
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partitioner.class = class org.apache.kafka.clients.producer.internals.DefaultPartitioner
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 0
+	retry.backoff.ms = 100
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.timeout.ms = 60000
+	transactional.id = null
+	value.serializer = class org.apache.kafka.common.serialization.StringSerializer
+
+14:48:45.804 [Thread-2] INFO  o.a.k.c.producer.ProducerConfig - ProducerConfig values: 
+	acks = 1
+	batch.size = 163840
+	bootstrap.servers = [localhost:9092]
+	buffer.memory = 1000000
+	client.id = 
+	compression.type = gzip
+	connections.max.idle.ms = 540000
+	enable.idempotence = false
+	interceptor.classes = null
+	key.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	linger.ms = 50
+	max.block.ms = 60000
+	max.in.flight.requests.per.connection = 5
+	max.request.size = 1048576
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partitioner.class = class org.apache.kafka.clients.producer.internals.DefaultPartitioner
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 0
+	retry.backoff.ms = 100
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.timeout.ms = 60000
+	transactional.id = null
+	value.serializer = class org.apache.kafka.common.serialization.StringSerializer
+
+14:48:46.746 [Thread-3] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka version : 1.0.0
+14:48:46.746 [Thread-3] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka commitId : aaa7af6d4a11b29d
+14:48:46.747 [Thread-6] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka version : 1.0.0
+14:48:46.748 [Thread-6] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka commitId : aaa7af6d4a11b29d
+14:48:46.748 [Thread-7] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka version : 1.0.0
+14:48:46.750 [Thread-7] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka commitId : aaa7af6d4a11b29d
+14:48:46.750 [Thread-5] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka version : 1.0.0
+14:48:46.750 [Thread-5] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka commitId : aaa7af6d4a11b29d
+14:48:46.750 [Thread-1] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka version : 1.0.0
+14:48:46.750 [Thread-1] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka commitId : aaa7af6d4a11b29d
+14:48:46.750 [Thread-2] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka version : 1.0.0
+14:48:46.750 [Thread-2] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka commitId : aaa7af6d4a11b29d
+14:48:46.750 [Thread-4] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka version : 1.0.0
+14:48:46.751 [Thread-4] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka commitId : aaa7af6d4a11b29d
+14:48:46.753 [Thread-4] INFO  o.a.k.c.consumer.ConsumerConfig - ConsumerConfig values: 
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = latest
+	bootstrap.servers = [localhost:9092]
+	check.crcs = true
+	client.id = 
+	connections.max.idle.ms = 540000
+	enable.auto.commit = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 100
+	fetch.min.bytes = 10000
+	group.id = ???
+	heartbeat.interval.ms = 3000
+	interceptor.classes = null
+	internal.leave.group.on.close = true
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 100000
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 305000
+	retry.backoff.ms = 100
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+14:48:46.753 [Thread-2] INFO  o.a.k.c.consumer.ConsumerConfig - ConsumerConfig values: 
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = latest
+	bootstrap.servers = [localhost:9092]
+	check.crcs = true
+	client.id = 
+	connections.max.idle.ms = 540000
+	enable.auto.commit = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 100
+	fetch.min.bytes = 10000
+	group.id = ???
+	heartbeat.interval.ms = 3000
+	interceptor.classes = null
+	internal.leave.group.on.close = true
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 100000
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 305000
+	retry.backoff.ms = 100
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+14:48:46.753 [Thread-6] INFO  o.a.k.c.consumer.ConsumerConfig - ConsumerConfig values: 
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = latest
+	bootstrap.servers = [localhost:9092]
+	check.crcs = true
+	client.id = 
+	connections.max.idle.ms = 540000
+	enable.auto.commit = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 100
+	fetch.min.bytes = 10000
+	group.id = ???
+	heartbeat.interval.ms = 3000
+	interceptor.classes = null
+	internal.leave.group.on.close = true
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 100000
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 305000
+	retry.backoff.ms = 100
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+14:48:46.753 [Thread-1] INFO  o.a.k.c.consumer.ConsumerConfig - ConsumerConfig values: 
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = latest
+	bootstrap.servers = [localhost:9092]
+	check.crcs = true
+	client.id = 
+	connections.max.idle.ms = 540000
+	enable.auto.commit = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 100
+	fetch.min.bytes = 10000
+	group.id = ???
+	heartbeat.interval.ms = 3000
+	interceptor.classes = null
+	internal.leave.group.on.close = true
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 100000
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 305000
+	retry.backoff.ms = 100
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+14:48:46.753 [Thread-5] INFO  o.a.k.c.consumer.ConsumerConfig - ConsumerConfig values: 
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = latest
+	bootstrap.servers = [localhost:9092]
+	check.crcs = true
+	client.id = 
+	connections.max.idle.ms = 540000
+	enable.auto.commit = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 100
+	fetch.min.bytes = 10000
+	group.id = ???
+	heartbeat.interval.ms = 3000
+	interceptor.classes = null
+	internal.leave.group.on.close = true
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 100000
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 305000
+	retry.backoff.ms = 100
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+14:48:46.753 [Thread-7] INFO  o.a.k.c.consumer.ConsumerConfig - ConsumerConfig values: 
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = latest
+	bootstrap.servers = [localhost:9092]
+	check.crcs = true
+	client.id = 
+	connections.max.idle.ms = 540000
+	enable.auto.commit = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 100
+	fetch.min.bytes = 10000
+	group.id = ???
+	heartbeat.interval.ms = 3000
+	interceptor.classes = null
+	internal.leave.group.on.close = true
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 100000
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 305000
+	retry.backoff.ms = 100
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+14:48:46.753 [Thread-3] INFO  o.a.k.c.consumer.ConsumerConfig - ConsumerConfig values: 
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = latest
+	bootstrap.servers = [localhost:9092]
+	check.crcs = true
+	client.id = 
+	connections.max.idle.ms = 540000
+	enable.auto.commit = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 100
+	fetch.min.bytes = 10000
+	group.id = ???
+	heartbeat.interval.ms = 3000
+	interceptor.classes = null
+	internal.leave.group.on.close = true
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 100000
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 305000
+	retry.backoff.ms = 100
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+14:48:46.785 [Thread-5] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka version : 1.0.0
+14:48:46.786 [Thread-5] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka commitId : aaa7af6d4a11b29d
+14:48:46.786 [Thread-3] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka version : 1.0.0
+14:48:46.786 [Thread-3] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka commitId : aaa7af6d4a11b29d
+14:48:46.786 [Thread-2] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka version : 1.0.0
+14:48:46.786 [Thread-5] INFO  c.t.controll.RunnableConverterModule - Thread-5 Task start
+14:48:46.786 [Thread-3] INFO  c.t.controll.RunnableConverterModule - Thread-3 Task start
+14:48:46.786 [Thread-2] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka commitId : aaa7af6d4a11b29d
+14:48:46.787 [Thread-4] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka version : 1.0.0
+14:48:46.787 [Thread-2] INFO  c.t.controll.RunnableConverterModule - Thread-2 Task start
+14:48:46.787 [Thread-4] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka commitId : aaa7af6d4a11b29d
+14:48:46.787 [Thread-4] INFO  c.t.controll.RunnableConverterModule - Thread-4 Task start
+14:48:46.787 [Thread-6] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka version : 1.0.0
+14:48:46.787 [Thread-6] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka commitId : aaa7af6d4a11b29d
+14:48:46.787 [Thread-6] INFO  c.t.controll.RunnableConverterModule - Thread-6 Task start
+14:48:46.787 [Thread-1] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka version : 1.0.0
+14:48:46.787 [Thread-1] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka commitId : aaa7af6d4a11b29d
+14:48:46.787 [Thread-7] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka version : 1.0.0
+14:48:46.787 [Thread-1] INFO  c.t.controll.RunnableConverterModule - Thread-1 Task start
+14:48:46.787 [Thread-7] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka commitId : aaa7af6d4a11b29d
+14:48:46.788 [Thread-7] INFO  c.t.controll.RunnableConverterModule - Thread-7 Task start
+14:48:46.850 [Thread-1] INFO  o.a.k.c.c.i.AbstractCoordinator - [Consumer clientId=consumer-4, groupId=???] Discovered coordinator kafka:9092 (id: 2147482646 rack: null)
+14:48:46.850 [Thread-2] INFO  o.a.k.c.c.i.AbstractCoordinator - [Consumer clientId=consumer-2, groupId=???] Discovered coordinator kafka:9092 (id: 2147482646 rack: null)
+14:48:46.850 [Thread-6] INFO  o.a.k.c.c.i.AbstractCoordinator - [Consumer clientId=consumer-3, groupId=???] Discovered coordinator kafka:9092 (id: 2147482646 rack: null)
+14:48:46.850 [Thread-7] INFO  o.a.k.c.c.i.AbstractCoordinator - [Consumer clientId=consumer-6, groupId=???] Discovered coordinator kafka:9092 (id: 2147482646 rack: null)
+14:48:46.850 [Thread-5] INFO  o.a.k.c.c.i.AbstractCoordinator - [Consumer clientId=consumer-5, groupId=???] Discovered coordinator kafka:9092 (id: 2147482646 rack: null)
+14:48:46.850 [Thread-3] INFO  o.a.k.c.c.i.AbstractCoordinator - [Consumer clientId=consumer-7, groupId=???] Discovered coordinator kafka:9092 (id: 2147482646 rack: null)
+14:48:46.850 [Thread-4] INFO  o.a.k.c.c.i.AbstractCoordinator - [Consumer clientId=consumer-1, groupId=???] Discovered coordinator kafka:9092 (id: 2147482646 rack: null)
+14:48:46.856 [Thread-3] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-7, groupId=???] Revoking previously assigned partitions []
+14:48:46.856 [Thread-7] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-6, groupId=???] Revoking previously assigned partitions []
+14:48:46.856 [Thread-6] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-3, groupId=???] Revoking previously assigned partitions []
+14:48:46.856 [Thread-3] INFO  o.a.k.c.c.i.AbstractCoordinator - [Consumer clientId=consumer-7, groupId=???] (Re-)joining group
+14:48:46.856 [Thread-4] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-1, groupId=???] Revoking previously assigned partitions []
+14:48:46.856 [Thread-6] INFO  o.a.k.c.c.i.AbstractCoordinator - [Consumer clientId=consumer-3, groupId=???] (Re-)joining group
+14:48:46.856 [Thread-7] INFO  o.a.k.c.c.i.AbstractCoordinator - [Consumer clientId=consumer-6, groupId=???] (Re-)joining group
+14:48:46.857 [Thread-2] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-2, groupId=???] Revoking previously assigned partitions []
+14:48:46.858 [Thread-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-4, groupId=???] Revoking previously assigned partitions []
+14:48:46.858 [Thread-5] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-5, groupId=???] Revoking previously assigned partitions []
+14:48:46.858 [Thread-4] INFO  o.a.k.c.c.i.AbstractCoordinator - [Consumer clientId=consumer-1, groupId=???] (Re-)joining group
+14:48:46.858 [Thread-2] INFO  o.a.k.c.c.i.AbstractCoordinator - [Consumer clientId=consumer-2, groupId=???] (Re-)joining group
+14:48:46.858 [Thread-1] INFO  o.a.k.c.c.i.AbstractCoordinator - [Consumer clientId=consumer-4, groupId=???] (Re-)joining group
+14:48:46.858 [Thread-5] INFO  o.a.k.c.c.i.AbstractCoordinator - [Consumer clientId=consumer-5, groupId=???] (Re-)joining group
+14:48:46.878 [Thread-7] INFO  o.a.k.c.c.i.AbstractCoordinator - [Consumer clientId=consumer-6, groupId=???] Successfully joined group with generation 1
+14:48:46.878 [Thread-3] INFO  o.a.k.c.c.i.AbstractCoordinator - [Consumer clientId=consumer-7, groupId=???] Successfully joined group with generation 1
+14:48:46.878 [Thread-4] INFO  o.a.k.c.c.i.AbstractCoordinator - [Consumer clientId=consumer-1, groupId=???] Successfully joined group with generation 1
+14:48:46.880 [Thread-7] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-6, groupId=???] Setting newly assigned partitions []
+14:48:46.879 [Thread-3] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-7, groupId=???] Setting newly assigned partitions []
+14:48:46.880 [Thread-1] INFO  o.a.k.c.c.i.AbstractCoordinator - [Consumer clientId=consumer-4, groupId=???] Successfully joined group with generation 1
+14:48:46.880 [Thread-5] INFO  o.a.k.c.c.i.AbstractCoordinator - [Consumer clientId=consumer-5, groupId=???] Successfully joined group with generation 1
+14:48:46.880 [Thread-2] INFO  o.a.k.c.c.i.AbstractCoordinator - [Consumer clientId=consumer-2, groupId=???] Successfully joined group with generation 1
+14:48:46.880 [Thread-6] INFO  o.a.k.c.c.i.AbstractCoordinator - [Consumer clientId=consumer-3, groupId=???] Successfully joined group with generation 1
+14:48:46.880 [Thread-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-4, groupId=???] Setting newly assigned partitions []
+14:48:46.881 [Thread-5] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-5, groupId=???] Setting newly assigned partitions []
+14:48:46.881 [Thread-4] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-1, groupId=???] Setting newly assigned partitions [Org_test-0]
+14:48:46.881 [Thread-2] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-2, groupId=???] Setting newly assigned partitions []
+14:48:46.882 [Thread-6] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-3, groupId=???] Setting newly assigned partitions []
+14:48:50.796 [pool-2-thread-1] INFO  c.tagConverter.ConverterApplications - [VINTAN2] Processing: 0 , Error: 0
+14:49:00.799 [pool-2-thread-1] INFO  c.tagConverter.ConverterApplications - [VINTAN2] Processing: 0 , Error: 0
+14:49:10.802 [pool-2-thread-1] INFO  c.tagConverter.ConverterApplications - [VINTAN2] Processing: 0 , Error: 1055
+14:49:20.797 [pool-2-thread-1] INFO  c.tagConverter.ConverterApplications - [VINTAN2] Processing: 0 , Error: 0
+14:49:30.803 [pool-2-thread-1] INFO  c.tagConverter.ConverterApplications - [VINTAN2] Processing: 0 , Error: 0
+14:49:40.795 [pool-2-thread-1] INFO  c.tagConverter.ConverterApplications - [VINTAN2] Processing: 0 , Error: 0
+14:49:50.795 [pool-2-thread-1] INFO  c.tagConverter.ConverterApplications - [VINTAN2] Processing: 0 , Error: 0
+14:50:00.798 [pool-2-thread-1] INFO  c.tagConverter.ConverterApplications - [VINTAN2] Processing: 0 , Error: 0
+14:50:10.797 [pool-2-thread-1] INFO  c.tagConverter.ConverterApplications - [VINTAN2] Processing: 0 , Error: 0

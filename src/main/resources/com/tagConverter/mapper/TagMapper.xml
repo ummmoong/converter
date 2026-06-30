@@ -13,7 +13,7 @@
     </resultMap>
 
     <select id="getAllTags" resultMap="tagResultMap" parameterType="java.util.List">
-        SELECT * FROM kps.tb_tag WHERE MENO_CD IN
+        SELECT * FROM idpp.tb_tag WHERE MENO_CD IN
         <foreach collection="plantCodes" item="plantCode" open="(" separator="," close=")">
             #{plantCode}
         </foreach>

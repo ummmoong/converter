@@ -183,7 +183,11 @@ public class ApplicationConfig {
         jarPath = jarPath.replaceAll("jar!.*", "jar"); //removes everything after .jar, if .jar exists in dirtyPath
         jarPath = jarPath.replaceAll("%20", " "); //necessary if path has spaces within
         if (!jarPath.endsWith(".jar")) { // this is needed if you plan to run the app using Spring Tools Suit play button.
-            jarPath = jarPath.replaceAll("/classes/.*", "/classes/");
+            if (jarPath.contains("/bin/main/")) {
+                jarPath = jarPath.replaceAll("/bin/main/.*", "/bin/");
+            } else {
+                jarPath = jarPath.replaceAll("/classes/.*", "/classes/");
+            }
         }
         logger.info("jarPath :" + jarPath);
         String directoryPath = Paths.get(jarPath).getParent().toString(); //Paths - from java 8

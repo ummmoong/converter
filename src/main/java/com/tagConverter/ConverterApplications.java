@@ -30,8 +30,7 @@ import java.util.concurrent.ScheduledExecutorService;
 
 
 /**
- * 태그 컨버터 메인 쓰레드
- * @author 스마트안전사업부 봉민석
+    * @author KDN
  */
 @SpringBootApplication
 public class ConverterApplications {
