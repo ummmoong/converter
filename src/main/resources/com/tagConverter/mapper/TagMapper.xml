@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.tagConverter.mapper.TagMapper">
+
+    <resultMap id="tagResultMap" type="com.tagConverter.mapper.Tag">
+        <id property="plantCode" column="MENO_CD"/>
+        <result property="orgTag" column="TAG_NM"/>
+        <result property="dcsTag" column="DCS_TAG"/>
+        <result property="stdTag" column="ALIAS_NM"/>
+        <result property="dataType" column="DATA_TYPE"/>
+    </resultMap>
+
+    <select id="getAllTags" resultMap="tagResultMap" parameterType="java.util.List">
+        SELECT * FROM kps.tb_tag WHERE MENO_CD IN
+        <foreach collection="plantCodes" item="plantCode" open="(" separator="," close=")">
+            #{plantCode}
+        </foreach>
+    </select>
+
+</mapper>

@@ -1,0 +1,91 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="TagConverter_new:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/TagConverter_new_jar</output-path>
+    <root id="archive" name="TagConverter_new.jar">
+      <element id="module-output" name="TagConverter_new.main" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/ch.qos.logback/logback-core/1.2.10/5328406bfcae7bcdcc86810fcb2920d2c297170d/logback-core-1.2.10.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/net.java.dev.jna/jna/5.8.0/3551d8d827e54858214107541d3aff9c615cb615/jna-5.8.0.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.docker-java/docker-java-api/3.2.13/5817ef8f770cb7e740d590090bf352df9491f3c1/docker-java-api-3.2.13.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.mybatis/mybatis/3.4.6/a77a546f679533837f6c6a75c034b669f3ce6a2f/mybatis-3.4.6.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-tx/5.3.16/ae9be43379f2967e015ace189d47728a99f18220/spring-tx-5.3.16.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.lz4/lz4-java/1.4/9bedb74f461a87ff2161bdf0778ad8ca6bad3e1c/lz4-java-1.4.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-annotations/2.9.0/7c10d545325e3a6e72e06381afe469fd40eb701/jackson-annotations-2.9.0.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.vaadin.external.google/android-json/0.0.20131108.vaadin1/fa26d351fe62a6a17f5cda1287c1c6110dec413f/android-json-0.0.20131108.vaadin1.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.mockito/mockito-junit-jupiter/4.0.0/b76de25bd6e5d8f7924d0536729c0076e37e9396/mockito-junit-jupiter-4.0.0.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.xerial.snappy/snappy-java/1.1.4/d94ae6d7d27242eaa4b6c323f881edbb98e48da6/snappy-java-1.1.4.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/log4j/log4j/1.2.17/5af35056b4d257e4b64b9e8069c0746e8b08629f/log4j-1.2.17.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.mybatis.spring.boot/mybatis-spring-boot-starter/1.3.2/cb6de087ae0d34b23ad0671aacdbcc433d84875f/mybatis-spring-boot-starter-1.3.2.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.slf4j/jul-to-slf4j/1.7.36/ed46d81cef9c412a88caef405b58f93a678ff2ca/jul-to-slf4j-1.7.36.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/jakarta.annotation/jakarta.annotation-api/1.3.5/59eb84ee0d616332ff44aba065f3888cf002cd2d/jakarta.annotation-api-1.3.5.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/net.bytebuddy/byte-buddy-agent/1.11.19/25c27513103bd4a166778b20a0be0c84dc5364f6/byte-buddy-agent-1.11.19.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-jcl/5.3.16/18d422952e0ce534c2b0ac8b47176c2432fb7e78/spring-jcl-5.3.16.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-aop/5.3.16/d61c0545e0395de608be52db1cccb60ba841a26b/spring-aop-5.3.16.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter/2.6.4/31adf5f726b6a5703815b99056110b96db7eff58/spring-boot-starter-2.6.4.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.junit.jupiter/junit-jupiter/5.9.1/9274d3757e224bc02eae367bd481062a263c150b/junit-jupiter-5.9.1.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-autoconfigure/2.6.4/36e75a2781fc604ac042945eed8be2fe049731df/spring-boot-autoconfigure-2.6.4.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.logging.log4j/log4j-api/2.17.1/d771af8e336e372fb5399c99edabe0919aeaf5b2/log4j-api-2.17.1.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-test/5.3.15/1efef59ebbf51bc072d08c5854b1d5cbb1c29b65/spring-test-5.3.15.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.yaml/snakeyaml/1.29/6d0cdafb2010f1297e574656551d7145240f6e25/snakeyaml-1.29.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.skyscreamer/jsonassert/1.5.0/6c9d5fe2f59da598d9aefc1cfc6528ff3cf32df3/jsonassert-1.5.0.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-databind/2.9.1/716da1830a2043f18882fc036ec26eb32cbe5aff/jackson-databind-2.9.1.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.logging.log4j/log4j-to-slf4j/2.17.1/3619fd18278a1a895c1dca8c5be002768071a20e/log4j-to-slf4j-2.17.1.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.slf4j/slf4j-api/1.7.36/6c62681a2f655b49963a5983b8b0950a6120ae14/slf4j-api-1.7.36.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-core/5.3.16/db1b277cd548c725144580dda8703ce179fb3769/spring-core-5.3.16.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.mybatis/mybatis-spring/1.3.2/fd9961cd026b1f6998be27c516973dd5366b14ec/mybatis-spring-1.3.2.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.docker-java/docker-java-transport/3.2.13/e9d308d1822181a9d48c99739f5eca014ec89199/docker-java-transport-3.2.13.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.ow2.asm/asm/9.1/a99500cf6eea30535eeac6be73899d048f8d12a8/asm-9.1.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.googlecode.json-simple/json-simple/1.1.1/c9ad4a0850ab676c5c64461a05ca524cdfff59f1/json-simple-1.1.1.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-context/5.3.16/efb9c749b335bf62dc07c1674e9d76d382a027e5/spring-context-5.3.16.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.commons/commons-compress/1.22/691a8b4e6cf4248c3bc72c8b719337d5cb7359fa/commons-compress-1.22.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.scala-lang/scala-library/2.11.11/e283d2b7fde6504f6a86458b1f6af465353907cc/scala-library-2.11.11.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.mybatis.spring.boot/mybatis-spring-boot-autoconfigure/1.3.2/cada00d6bb4e7b8a733b3cd376ad69a307008685/mybatis-spring-boot-autoconfigure-1.3.2.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-beans/5.3.16/15decec5cea7a91423272daaae6f5d050c23cf3b/spring-beans-5.3.16.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter-jdbc/2.6.4/19047bf41d1f01a3b5e82f90ac77dceefadda943/spring-boot-starter-jdbc-2.6.4.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains/annotations/17.0.0/8ceead41f4e71821919dbdb7a9847608f1a938cb/annotations-17.0.0.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-test-autoconfigure/2.6.3/c903465682a6cd69adbc83feb8e8bfa26c51e6ae/spring-boot-test-autoconfigure-2.6.3.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.kafka/kafka_2.11/1.0.0/c21875affc4842d83c4590d61614fec7f99325b1/kafka_2.11-1.0.0.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/junit/junit/4.10/e4f1766ce7404a08f45d859fb9c226fc9e41a861/junit-4.10.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.mockito/mockito-core/4.0.0/f5195e0c4a45716bbd2d1d29173adbd148acce3a/mockito-core-4.0.0.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/net.sf.jopt-simple/jopt-simple/5.0.4/4fdac2fbe92dfad86aa6e9301736f6b4342a3f5c/jopt-simple-5.0.4.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/jakarta.activation/jakarta.activation-api/1.2.2/99f53adba383cb1bf7c3862844488574b559621f/jakarta.activation-api-1.2.2.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.junit.jupiter/junit-jupiter-engine/5.9.1/1bf771097bde296c3ab174861954e8aafaaf2e94/junit-jupiter-engine-5.9.1.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.junit.jupiter/junit-jupiter-params/5.9.1/ffcd1013edaeee112be11fcddeb38882d79238de/junit-jupiter-params-5.9.1.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-expression/5.3.16/831a17ce70686c571f3c05c4bcfb81012c5814df/spring-expression-5.3.16.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.objenesis/objenesis/3.2/7fadf57620c8b8abdf7519533e5527367cb51f09/objenesis-3.2.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.jayway.jsonpath/json-path/2.6.0/67f565b424f7903a12d4f5b9361b11462ecacdac/json-path-2.6.0.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter-logging/2.6.4/e8bab752fd29797df304ef2ad8575e5392d96c4c/spring-boot-starter-logging-2.6.4.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/ch.qos.logback/logback-classic/1.2.10/f69d97ef3335c6ab82fc21dfb77ac613f90c1221/logback-classic-1.2.10.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.slf4j/slf4j-log4j12/1.7.25/110cefe2df103412849d72ef7a67e4e91e4266b4/slf4j-log4j12-1.7.25.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter-test/2.6.3/1ac659fc8c6d7285218b7ff79d67b87736f4ddf2/spring-boot-starter-test-2.6.3.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.testcontainers/kafka/1.17.6/1975b93708e99340690690177a9c7bbf5aabc823/kafka-1.17.6.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.junit.platform/junit-platform-commons/1.9.1/3145f821b5cd10abcdc5f925baa5fffa6f1b628f/junit-platform-commons-1.9.1.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/net.bytebuddy/byte-buddy/1.11.19/3ee8778b8e5287c57c9c3f3fd4c1c23e93e8779a/byte-buddy-1.11.19.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/jakarta.xml.bind/jakarta.xml.bind-api/2.3.3/48e3b9cfc10752fba3521d6511f4165bea951801/jakarta.xml.bind-api-2.3.3.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.zaxxer/HikariCP/4.0.3/107cbdf0db6780a065f895ae9d8fbf3bb0e1c21f/HikariCP-4.0.3.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.kafka/kafka-clients/1.0.0/98a12cfff3a5b7ca77e68aba7adccfd817b2d846/kafka-clients-1.0.0.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.yammer.metrics/metrics-core/2.2.0/f82c035cfa786d3cbec362c38c22a5f5b1bc8724/metrics-core-2.2.0.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.rnorth.duct-tape/duct-tape/1.0.8/92edc22a9ab2f3e17c9bf700aaee377d50e8b530/duct-tape-1.0.8.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.hamcrest/hamcrest-core/1.3/42a25dc3219429f0e5d060061f71acb49bf010a0/hamcrest-core-1.3.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-test/2.6.3/93b38ba8d4f027a7eda8c28dbe8f77b712de1142/spring-boot-test-2.6.3.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.hamcrest/hamcrest/2.2/1820c0968dba3a11a1b30669bb1f01978a91dedc/hamcrest-2.2.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.junit.jupiter/junit-jupiter-api/5.9.1/7bb53fbc0173e9f6a9d21d58297af94b1f2f9ce1/junit-jupiter-api-5.9.1.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/net.minidev/json-smart/2.4.7/8d7f4c1530c07c54930935f3da85f48b83b3c109/json-smart-2.4.7.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot/2.6.4/356c0ee25794ca46d8344d13cffbc30bfae1dc0e/spring-boot-2.6.4.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-annotations/2.10.3/f63b3b1da563767d04d2e4d3fc1ae0cdeffebe7/jackson-annotations-2.10.3.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.xmlunit/xmlunit-core/2.8.4/35be57989ca80eefa03161b211630e319a8f36c6/xmlunit-core-2.8.4.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.testcontainers/testcontainers/1.17.6/11b28972d2d8bddd5a7d3b6e21016fbe13bc8e8b/testcontainers-1.17.6.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.101tec/zkclient/0.10/c54d4b5a5e89af75a80b6d5857400165ce5188d0/zkclient-0.10.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.zookeeper/zookeeper/3.4.10/8eebdbb7a9df83e02eaa42d0e5da0b57bf2e4da/zookeeper-3.4.10.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/junit/junit/4.13.2/8ac9e16d933b6fb43bc7f576336b8f4d7eb5ba12/junit-4.13.2.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.mariadb.jdbc/mariadb-java-client/2.4.1/39e4b7b5cac8ba2ccd5399bf62294fcc9463324d/mariadb-java-client-2.4.1.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.opentest4j/opentest4j/1.2.0/28c11eb91f9b6d8e200631d46e20a7f407f2a046/opentest4j-1.2.0.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/net.minidev/accessors-smart/2.4.7/3970cfc505e6657ca60f3aa57c849f6043000d7a/accessors-smart-2.4.7.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-core/2.9.1/60077fe98b11e4e7cf8af9b20609326a166d6ac4/jackson-core-2.9.1.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-jdbc/5.3.16/456645153d6a5ed62b3d27750ee1b3c34b460b71/spring-jdbc-5.3.16.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.junit.platform/junit-platform-engine/1.9.1/83591e5089d6cea5f324aa3ecca9b19d5a275803/junit-platform-engine-1.9.1.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.hamcrest/hamcrest-core/1.1/860340562250678d1a344907ac75754e259cdb14/hamcrest-core-1.1.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.docker-java/docker-java-transport-zerodep/3.2.13/4cbc2c09d6c264767a39624066987ed4a152bc68/docker-java-transport-zerodep-3.2.13.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.assertj/assertj-core/3.21.0/27a14d6d22c4e3d58f799fb2a5ca8eaf53e6942a/assertj-core-3.21.0.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>
